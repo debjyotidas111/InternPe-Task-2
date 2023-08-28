@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Address Form</title>
+    <link rel="stylesheet" href="adress_form.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Address Form</header>
+      <form action="https://docs.google.com/spreadsheets/d/1ivJdyPQLFYhpW2oGTCb0YBTi272NEzbxG3F4osbqdMA/edit#gid=0" method="post" class="form">
+        <div class="input-box">
+          <label>Address 1</label>
+          <input type="text" placeholder="Enter Address 1" required />
+        </div>
+
+        <div class="input-box">
+          <label>Address 2</label>
+          <input type="text" placeholder="Enter address 2" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Address 3</label>
+            <input type="text" placeholder="Enter Address 3" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <button onsubmit="alert('You have Submitted your address successfully' )" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
+

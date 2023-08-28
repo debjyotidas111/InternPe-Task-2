@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debjyoti - Ecommerce Website</title>
+    <script src="https://kit.fontawesome.com/5eaad584b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header>
+
+    <div class="header-top-actions">     
+
+        <select name="language">
+
+          <option value="en-US">English</option>
+          <option value="hn">हिंदी</option>
+          <option value="es-ES">Espa&ntilde;ol</option>
+          <option value="fr">Fran&ccedil;ais</option>
+
+        </select>
+
+        <select name="currency">
+
+            <option value="inr">INR ₹</option>
+            <option value="pou">POU £</option>
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+  
+          </select>
+
+      </div>
+
+
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - $20
+          </p>
+        </div>
+
+     
+          <div class="btn-field">
+            <form action="sign_up_and_in.html" method="get">
+            <button type="submit" class="signBtn">Sign up / Sign In</button>
+          </form>
+           </div>
+
+           <div class="btn-field">
+            <form action="address_form.html" method="get">
+            <button type="submit" class="signBtn">Your Adrdess</button>
+          </form>
+           </div>
+      
+
+        <ul class="header-social-container">
+
+            <li>
+                <a href="" class="social-link">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                </a>
+              </li>
+
+            <li>
+              <a href="#" class="social-link">
+                  <i class="fa-brands fa-square-facebook
+                  fa-xl"></i>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                  <i class="fa-brands fa-square-twitter fa-xl"></i>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                  <i class="fa-brands fa-square-instagram fa-xl"></i>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+    
+  </header>
+
+
+
+  <div class="header-bottom">
+
+        <div class="container">
+  
+          <a href="#" class="header-logo">
+            <img src="data:image/png;base64,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" alt="logo" ">
+          </a>
+  
+          <div class="header-search-container">
+  
+            <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+  
+            <a class="search-btn" style="margin-left: -41px;
+            margin-top: 10px; cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass fa-lg search"></i>
+            </a>
+  
+          </div>
+  
+
+
+          <div class="header-user-actions">
+  
+            <a class="action-btn" href="my_account.html">
+                <i class="fa-regular fa-user fa-xl"  style="font-size: 31px;"></i>
+            </a>
+  
+            <a class="action-btn" href="wishlist.html">
+                <i class="fa-regular fa-heart fa-xl" style="font-size: 31px;"></i>
+            </a>
+  
+            <a class="action-btn" href="shopping_cart.html">
+                <i class="fa-sharp fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
+            </a>
+  
+          </div>
+  
+        </div>
+  
+  </div>
+
+
+  <nav>
+    <ul class="desktop-menu-category-list">
+
+       <li class="menu-category">
+         <a href="#men" class="menu-title">Men's</a>
+       </li>
+
+       <li class="menu-category">
+         <a href="#women" class="menu-title">Women's</a>
+
+       </li>
+
+       <li class="menu-category">
+         <a href="#phone" class="menu-title">Mobile Phones</a>
+
+       </li>
+
+       <li class="menu-category">
+         <a href="blog.html" class="menu-title">Blog</a>
+       </li>
+
+       <li class="menu-category">
+         <a href="#offer" class="menu-title">Offers</a>
+       </li>
+
+       <li class="menu-category">
+        <a href="contact.html" class="menu-title">Contact Us</a>
+      </li>
+     </ul>
+ </nav>
+    
+
+ <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" >
+        <div class="img-container">
+      <img src="https://media1.thehungryjpeg.com/thumbs2/ori_82876_d2add3e6000bce229789d97e4a49b0b8085f0210_summer-sale-abstract-banner-background-design-vector-illustration-and-raster-version.jpg" alt="banner">
+        </div>
+      </section>
+
+      </article>
+
+
+      
+      <section class="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="service-icon-1.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Free Shipping</p>
+
+                <p class="service-item-text">On All Order Over $599</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="service-icon-2.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Easy Returns</p>
+
+                <p class="service-item-text">30 Day Returns Policy</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="service-icon-3.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Secure Payment</p>
+
+                <p class="service-item-text">100% Secure Gaurantee</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="service-icon-4.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Special Support</p>
+
+                <p class="service-item-text">24/7 Dedicated Support</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+        <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category">
+        <div class="container">
+
+          <ul class="category-list">
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="https://imagescdn.planetfashion.in/img/app/product/1/169986-5650126.jpg?auto=format" alt="Sunglass & eye" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Sunglass & Eye</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-c1f5d94384b5457d2118611ae0b061cc-lq" alt="Active & outdoor" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Active & Outdoor</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="https://rukminim1.flixcart.com/image/832/832/kex5ci80/jacket/8/h/4/40-xmoc00609-m8-parx-original-imafvg3eapesjurv.jpeg?q=70" alt="Winter wear" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Winter Wear</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="https://img.ltwebstatic.com/images3_pi/2022/04/18/16502620841b5c4043d4492c0207a6217d5766a46a_thumbnail_600x.webp" alt="Exclusive footwear" loading="lazy" width="510"
+                  height="600" class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Exclusive Footwear</a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17500084/2022/3/12/8e72c270-6733-4dd8-b550-de7e16d525d81647089802565RubansGold-PlatedRedGreenStone-StuddedTempleJewellery-Set4.jpg" alt="Jewelry" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Jewellery
+            </a>
+            </li>
+
+            <li class="category-item">
+              <figure class="category-banner">
+                <img src="https://cdn.shopify.com/s/files/1/0603/1520/5677/products/IMG_3644.jpg?v=1677154498&width=600" alt="Sports cap" loading="lazy" width="510" height="600"
+                  class="w-100">
+              </figure>
+
+              <a href="#" class="btn btn-secondary">Sports Cap</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section class="section-product" id="offer">
+        <div class="container">
+
+          <h2 class="h2 section-title">Sale Is Live</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">Best Seller</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Hot Collection</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Trendy</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">New Arrival</button>
+            </li>
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="samsung-galaxy-s22-ultra-burgundy.webp" alt="samsung phone" loading="lazy" 
+                      class="w-100">
+                    </div>
+                  
+                  </a>
+
+                  <div class="card-badge red"> -20%</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Samsung galaxy s22 ultra</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="48.75">&dollar;1200.00</data>
+
+                    <data value="65.00">&dollar;1500.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="220px-Apple_Watch_(Space_Grey_42mm).png" alt="apple watch" loading="lazy"
+                       class="w-100">
+                    </div>
+                    
+                  </a>
+
+                  <div class="card-badge green"> New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Apple watch</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="62.00">&dollar;500.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="washing.avif" alt="washing machine" loading="lazy"
+                       class="w-100">
+                    </div>
+                    
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Lg Washing Machine</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">&dollar;600.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li style="margin-right: 0;">
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="rich-dad-poor-dad-436.webp" alt="book" loading="lazy"
+                       class="w-100">
+                    </div>
+                    
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Rich dad poor dad book</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="84.00">&dollar;10.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="https://fotocentreindia.com/wp-content/uploads/2018/03/Canon-DSLR-Camera-EOS-1500D-with-18-55mm-IS-II-LensOnline-Buy-Mumbai-India-1.jpg" alt="Fit Twill Shirt for Woman" loading="lazy"
+                       class="w-100">
+                    </div>
+                   
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">canon 1500D SLR camera</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="45.00">&dollar;1400.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="https://www.reliancedigital.in/medias/Dell-5520-Laptops-492850230-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0NDQ0OTd8aW1hZ2UvanBlZ3xpbWFnZXMvaGE3L2hjNy85ODQ0NTMyMTgzMDcwLmpwZ3wwM2Y1ZDlkZDQ4NjJlYTI1MjBjMmI4YTEwNzYyODI1YWYyNTE0MmU0YjVjNjIzYmY4NTk0NWFiMDJiZWNmNmNh" alt="Fit Twill Shirt for Woman" loading="lazy"
+                       class="w-100">
+                    </div>
+                   
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Dell G15 Gaming Laptop</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="30.00">&dollar;1500.00</data>
+
+                    <data value="38.00">&dollar;1700.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="https://cdn.shopify.com/s/files/1/0062/6923/9363/products/pic-47_5733880c-c5e0-420d-93b8-32db53eed9cb_1200x.jpg?v=1631684036" alt="Fit Twill Shirt for Woman" loading="lazy"
+                       class="w-100">
+                    </div>
+                   
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Crystal Chandelier</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="25.00">&dollar;600.00</data>
+
+                    <data value="39.00">&dollar;800.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li style="margin-right: 0;">
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="https://ae03.alicdn.com/kf/H810bf60290fa45bc9efc2c95a71c93bcC.jpg" alt="Fit Twill Shirt for Woman" loading="lazy"
+                       class="w-100">
+                    </div>
+                
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Luxury double bed</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="85.00">&dollar;320.00</data>
+
+                    <data value="99.00">&dollar;450.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="https://cdn.shopify.com/s/files/1/0500/0711/3892/products/vibecrafts-classic-lord-krishna-premium-wall-painting-PTVCH_2245_3.jpg?v=1640765366" alt="Fit Twill Shirt for Woman" loading="lazy"
+                       class="w-100">
+                    </div>
+                   
+                  </a>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">Lord Krishna Painting</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="32.00">&dollar;85.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <div class="img-container">
+                      <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1621415336.46562714.png" alt="Fit Twill Shirt for Woman" loading="lazy"
+                       class="w-100">
+                    </div>
+                   
+                  </a>
+
+                  <div class="card-badge green">New</div>
+
+                  <div class="card-actions">
+
+                    <button class="card-action-btn" aria-label="Quick view">
+                      <i class="fa-regular fa-eye"></i>
+                      
+                    </button>
+
+                    <button class="card-action-btn cart-btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+
+                      <p>Add to Cart</p>
+                    </button>
+
+                    <button class="card-action-btn" aria-label="Add to Whishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <a href="#">MI TV P1 55 inch</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data value="71.00">&dollar;750.00</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-outline" style="margin-left: 630px; padding: 10px; background-color: orange; cursor: pointer;">View All Products</button>
+
+        </div>
+      </section>
+
+
+
+      <h2 id="men" class="title" style="margin-top: 90px; color: aquamarine; background-color: black; padding-top: 10px; border-top: 3px solid rgb(182, 37, 170);"> Men's Products</h2>
+
+      <div class="product-main">
+
+        <div class="product-grid">
+
+          <div class="showcase">
+
+            <div class="showcase-banner">
+
+              <div class="img-container">
+                <img src="jacket-1.jpg" alt="Mens Winter Leathers Jackets" class="product-img default">
+              </div>        
+
+            </div>
+
+            <div class="showcase-content">
+
+              <h3 >
+                <a href="#" class="showcase-title">Mens Winter Leathers Jackets</a>
+              </h3>
+
+              <div class="showcase-rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+
+              <div class="price-box">
+                <p class="price">$48.00  <del>$75.00</del></p>
+               
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="showcase">
+          
+            <div class="showcase-banner">
+              <div class="img-container">
+                <img src="https://img0.junaroad.com/uiproducts/17927198/zoom_0-1629181576.jpg" alt="Mens cotton shirt" class="product-img default">
+              </div>
+                            
+        
+            </div>
+          
+            <div class="showcase-content">
+          
+              <h3>
+                <a href="#" class="showcase-title">Pure Dyed Cotton Shirt</a>
+              </h3>
+          
+              <div class="showcase-rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              
+              </div>
+          
+              <div class="price-box">
+                <p class="price">$45.00 <del>$56.00</del></p>
+                
+              </div>
+          
+            </div>
+          
+          </div>
+
+          <div class="showcase">
+          
+            <div class="showcase-banner">
+              <div class="img-container">
+                <img src="https://images.meesho.com/images/products/9070902/4l3pt_512.jpg" alt="Mens hat" class="product-img default">
+              </div>
+          
+        
+            </div>
+          
+            <div class="showcase-content">
+          
+              <h3>
+                <a href="#" class="showcase-title">Man's Hat</a>
+              </h3>
+          
+              <div class="showcase-rating" style="padding-left: 123px;">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+               
+              </div>
+          
+              <div class="price-box" style="padding-left: 118px;">
+                <p class="price">$58.00    <del>$65.00</del></p>
+             
+              </div>
+          
+            </div>
+          
+          </div>
+
+          <div class="showcase">
+          
+            <div class="showcase-banner">
+              <div class="img-container">
+                <img src="https://rukminim1.flixcart.com/image/612/612/l3bx5e80/t-shirt/x/i/9/l-ts1-vebnor-original-imagegzgqp9ytxzg.jpeg" alt="t-shirt" class="product-img default">
+              </div>
+           
+            </div>
+          
+            <div class="showcase-content">
+      
+              <h3>
+                <a href="#" class="showcase-title">Men's T-Shirt</a>
+              </h3>
+          
+              <div class="showcase-rating" style="padding-left: 140px;">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+          
+              <div class="price-box" style="padding-left: 115px;">
+                <p class="price">$25.00   <del>$35.00</del></p>
+              
+              </div>
+          
+            </div>
+          
+          </div>
+
+       </div>
+
+
+          <div class="product-grid">
+
+            <div class="showcase">
+          
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="shoe-2.jpg" alt="Mens shoes" class="product-img default">
+                </div>
+            
+              </div>
+            
+              <div class="showcase-content">
+            
+                <h3>
+                  <a href="#" class="showcase-title">Casual Men's Brown shoes</a>
+                </h3>
+            
+                <div class="showcase-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  
+                </div>
+            
+                <div class="price-box">
+                  <p class="price">$99.00   <del>$105.00</del></p>
+              
+                </div>
+            
+              </div>
+            
+            </div>
+  
+            <div class="showcase">
+            
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="https://5.imimg.com/data5/NG/SS/NH/SELLER-87880387/81-500x500.jpg" alt="Mens pocket watch "  class="product-img default">
+                </div>
+            
+              </div>
+            
+              <div class="showcase-content">
+            
+                <h3>
+                  <a href="#" class="showcase-title">Pocket Watch Leather Pouch</a>
+                </h3>
+            
+                <div class="showcase-rating" style="padding-left: 140px;">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+            
+                <div class="price-box">
+                  <p class="price">$150.00  <del>$170.00</del></p>
+                
+                </div>
+            
+              </div>
+            
+            </div>
+  
+            <div class="showcase">
+            
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="watch-1.jpg" alt="Mens smart watch"  class="product-img default">
+                </div>
+            
+              </div>
+            
+              <div class="showcase-content">
+            
+                <h3>
+                  <a href="#" class="showcase-title">Smart watch Vital Plus</a>
+                </h3>
+            
+                <div class="showcase-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                
+                </div>
+            
+                <div class="price-box" style="padding-left: 120px;">
+                  <p class="price">$100.00 <del>$120.00</del></p>
+                  
+                </div>
+            
+              </div>
+            
+            </div>
+  
+            <div class="showcase">
+            
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="https://static-01.daraz.com.bd/p/264db6b71cb714f90cb36d301b3f3d2b.jpg" alt="Men's sunglass" width="300px" height="300px" class="product-img default">
+                </div>
+            
+              </div>
+            
+              <div class="showcase-content">
+                
+                <h3>
+                  <a href="#" class="showcase-title">Men's Sunglass</a>
+                </h3>
+            
+                <div class="showcase-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+               
+               
+                </div>
+            
+                <div class="price-box" style="padding-left: 115px;">
+                  <p class="price">$25.00 <del>$30.00</del></p>
+              
+                </div>
+            
+              </div>
+            
+            </div>
+
+            </div>
+
+
+             <div class="product-grid">
+
+              <div class="showcase">
+          
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2012863/2017/7/27/11501152863186-Camus-Sutra-Mens-Casual-Shirt-4881501152862952-1.jpg" alt="Mens shirt"  class="product-img default">
+                  </div>
+              
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Mens Casual Shirt</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$32.00  <del>$45.00</del></p>
+                
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://github.com/debjyotidas111/codepen-assests/blob/main/51TBDNxzQlL._AC_UY1000_.jpg?raw=true" alt="shoe" class="product-img default">
+                  </div>      
+              
+        
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Trekking & Running Shoes - black</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                
+                  </div>
+              
+                  <div class="price-box" style="padding-left: 126px;">
+                    <p class="price">$58.00  <del>$64.00</del></p>
+                
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://cdn.shopify.com/s/files/1/0471/8677/2123/products/3_c5c5c544-81db-499d-b972-47707e2540fa.jpg?v=1677827628&width=1445" alt="Mens trouser"  class="product-img default">
+                  </div>
+              
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Men's trouser</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    
+                  </div>
+              
+                  <div class="price-box" style="padding-left: 116px;">
+                    <p class="price">$50.00 <del>$65.00</del></p>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://cdn.shopify.com/s/files/1/0015/8099/0516/products/101771-3308-1-PLD_480x480.jpg?v=1660613408" alt="Mens shorts" class="product-img default">
+                  </div>             
+                
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Better French Terry Sweatshorts</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$78.00 <del>$85.00</del></p>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+
+             </div>  
+
+        </div>
+
+
+
+
+        <h3 id="women" class="title" style="margin-top: 90px; color: aquamarine; background-color: black; padding-top: 10px; border-top: 3px solid rgb(182, 37, 170);"> Women's Products</h3>
+
+        <div class="product-main">
+  
+          <div class="product-grid">
+  
+            <div class="showcase">
+  
+              <div class="showcase-banner">
+  
+                <div class="img-container">
+                  <img src="https://navbharattimes.indiatimes.com/photo/89449373.cms" alt=" Jackets" class="product-img default">
+                </div>        
+  
+              </div>
+  
+              <div class="showcase-content">
+  
+                <h3 >
+                  <a href="#" class="showcase-title">Woman's Winter Jacket</a>
+                </h3>
+  
+                <div class="showcase-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+  
+                <div class="price-box">
+                  <p class="price">$38.00  <del>$55.00</del></p>
+                 
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            <div class="showcase">
+            
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="https://5.imimg.com/data5/NL/OR/MY-11864257/womens-casual-shirt-500x500.jpg" alt=" cotton shirt" class="product-img default">
+                </div>
+                              
+          
+              </div>
+            
+              <div class="showcase-content">
+            
+                <h3>
+                  <a href="#" class="showcase-title">Woman's Cotton Shirt</a>
+                </h3>
+            
+                <div class="showcase-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                
+                </div>
+            
+                <div class="price-box">
+                  <p class="price">$32.00 <del>$40.00</del></p>
+                  
+                </div>
+            
+              </div>
+            
+            </div>
+  
+            <div class="showcase">
+            
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="https://cdn.shopify.com/s/files/1/0397/0396/9949/products/BERWICK-PANAMA_2000x.jpg?v=1680706594" alt=" hat"  class="product-img default">
+                </div>
+            
+          
+              </div>
+            
+              <div class="showcase-content">
+            
+                <h3>
+                  <a href="#" class="showcase-title">Woman's Hat</a>
+                </h3>
+            
+                <div class="showcase-rating" style="padding-left: 123px;">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                 
+                </div>
+            
+                <div class="price-box" style="padding-left: 118px;">
+                  <p class="price">$32.00 <del>$45.00</del></p>
+               
+                </div>
+            
+              </div>
+            
+            </div>
+  
+            <div class="showcase">
+            
+              <div class="showcase-banner">
+                <div class="img-container">
+                  <img src="http://cdn.shopify.com/s/files/1/0470/0330/4086/products/ikraft-womens-tshirts-ikraft-women-white-t-shirt-design-i-design-my-life-20718561722518.jpg?v=1612593619" alt="t-shirt" class="product-img default">
+                </div>
+             
+              </div>
+            
+              <div class="showcase-content">
+        
+                <h3>
+                  <a href="#" class="showcase-title">Ladies T-Shirt</a>
+                </h3>
+            
+                <div class="showcase-rating" style="padding-left: 140px;">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+            
+                <div class="price-box" style="padding-left: 115px;">
+                  <p class="price">$19.00 <del>$25.00</del></p>
+                
+                </div>
+            
+              </div>
+            
+            </div>
+  
+         </div>
+  
+  
+            <div class="product-grid">
+  
+              <div class="showcase">
+            
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20230320/7E9K/641852d3aeb26924e3cdf64f/el_paso_black_ankle-length_lace-up_shoes.jpg" alt=" shoes" class="product-img default">
+                  </div>
+              
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Casual Woman's shoes</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$80.00 <del>$95.00</del></p>
+                
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://t3.ftcdn.net/jpg/01/07/01/44/360_F_107014409_XSyYvuF0oX02baJUsyxmGnYXM9r8yHDL.jpg" alt="cream "  class="product-img default">
+                  </div>
+              
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Woman's Facial Cream</a>
+                  </h3>
+              
+                  <div class="showcase-rating" style="padding-left: 140px;">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$15.00  <del>$22.00</del></p>
+                  
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://m.media-amazon.com/images/I/41PPWGfjBEL._SL500_.jpg" alt="smartwatch"  class="product-img default">
+                  </div>
+              
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Ladies Smart watch </a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  
+                  </div>
+              
+                  <div class="price-box" style="padding-left: 120px;">
+                    <p class="price">$55.00 <del>$65.00</del></p>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20220804/r1o3/62eb8ae0aeb26921afc4e655/-288Wx360H-463541039-brown-MODEL.jpg" alt=" sunglass"  class="product-img default">
+                  </div>
+              
+                </div>
+              
+                <div class="showcase-content">
+                  
+                  <h3>
+                    <a href="#" class="showcase-title">Woman's Sunglass</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                 
+                 
+                  </div>
+              
+                  <div class="price-box" style="padding-left: 115px;">
+                    <p class="price">$15.00 <del>$20.00</del></p>
+                
+                  </div>
+              
+                </div>
+              
+              </div>
+  
+              </div>
+  
+  
+               <div class="product-grid">
+  
+                <div class="showcase">
+            
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://m.media-amazon.com/images/I/61KVLSg1GIL._UX569_.jpg" alt=" shirt"  class="product-img default">
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Ladies Formal Shirt</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$12.00  <del>$20.00</del></p>
+                  
+                    </div>
+                
+                  </div>
+                
+                </div>
+      
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://admin.mochishoes.com/product/31-5136/660/31-5136M11.jpg" alt="shoe" class="product-img default">
+                    </div>      
+                
+          
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Woman's Formal Shoe</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  
+                    </div>
+                
+                    <div class="price-box" style="padding-left: 126px;">
+                      <p class="price">$35.00  <del>$40.00</del></p>
+                  
+                    </div>
+                
+                  </div>
+                
+                </div>
+      
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://5.imimg.com/data5/HJ/YG/MY-24660125/9455184_fpx-500x500.jpg" alt=" trouser"  class="product-img default">
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Ladies trouser</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      
+                    </div>
+                
+                    <div class="price-box" style="padding-left: 116px;">
+                      <p class="price">$25.00 <del>$33.00</del></p>
+                      
+                    </div>
+                
+                  </div>
+                
+                </div>
+      
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://cdn.shopify.com/s/files/1/0052/6139/3989/products/3_7_51899e9a-c5ee-4dba-b356-3539cfcdceed_1500x.jpg?v=1641800970" alt=" shorts" class="product-img default">
+                    </div>             
+                  
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Woman's shorts</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$12.00 <del>$18.00</del></p>
+                      
+                    </div>
+                
+                  </div>
+                
+                </div>
+  
+               </div>  
+  
+          </div>
+
+
+
+
+          <h4 id="phone" class="title" style="margin-top: 90px; color: aquamarine; background-color: black; padding-top: 10px; border-top: 3px solid rgb(182, 37, 170);"> Mobile Phones</h4>
+
+          <div class="product-main" >
+    
+            <div class="product-grid">
+    
+              <div class="showcase">
+    
+                <div class="showcase-banner">
+    
+                  <div class="img-container">
+                    <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/357930/iPhone-13-Pro-128GB-Dourado-Tela-6-1-12MP-iOS_1674820124_g.jpg" alt=" phone" class="product-img default">
+                  </div>        
+    
+                </div>
+    
+                <div class="showcase-content">
+    
+                  <h3 >
+                    <a href="#" class="showcase-title">Apple Phones</a>
+                  </h3>
+    
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+    
+                  <div class="price-box">
+                    <p class="price">$999.00  <del>$1100.00</del></p>
+                   
+                  </div>
+    
+                </div>
+    
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://www.samsung.com/global/galaxy/google-apps-on-galaxy/images/gp-ecosystem-galaxy-z_fold4-mo.png" alt=" phone" class="product-img default">
+                  </div>
+                                
+            
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Samsung Phones</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$850.00 <del>$990.00</del></p>
+                    
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/VK/FT/QM/71985240/vivo-v202-smart-phone-1000x1000.jpg" alt=" phone"  class="product-img default">
+                  </div>
+              
+            
+                </div>
+              
+                <div class="showcase-content">
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Vivo Phones</a>
+                  </h3>
+              
+                  <div class="showcase-rating" style="padding-left: 123px;">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    
+                   
+                  </div>
+              
+                  <div class="price-box" style="padding-left: 118px;">
+                    <p class="price">$550.00 <del>$620.00</del></p>
+                 
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <div class="img-container">
+                    <img src="http://i01.appmifile.com/webfile/globalimg/in/cms/D7A7DA95-AEF8-228B-A2D2-A3FEBF237C33!800x800!85.jpg" alt="phone" class="product-img default">
+                  </div>
+               
+                </div>
+              
+                <div class="showcase-content">
+          
+                  <h3>
+                    <a href="#" class="showcase-title">Redmi Phones</a>
+                  </h3>
+              
+                  <div class="showcase-rating" style="padding-left: 140px;">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+              
+                  <div class="price-box" style="padding-left: 115px;">
+                    <p class="price">$350.00 <del>$450.00</del></p>
+                  
+                  </div>
+              
+                </div>
+              
+              </div>
+    
+           </div>
+    
+    
+              <div class="product-grid">
+    
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://cellmart.pk/wp-content/uploads/2021/10/seafoammbjh.jpg" alt=" phone" class="product-img default">
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Pixel Phones</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$790.00 <del>$870.00</del></p>
+                  
+                    </div>
+                
+                  </div>
+                
+                </div>
+      
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://image05.realme.net/general/20220517/1652773373432.png" alt="phone "  class="product-img default">
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Realme Phones</a>
+                    </h3>
+                
+                    <div class="showcase-rating" style="padding-left: 140px;">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$390.00  <del>$470.00</del></p>
+                    
+                    </div>
+                
+                  </div>
+                
+                </div>
+      
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://github.com/debjyotidas111/codepen-assests/blob/main/157266-800-auto.png?raw=true" alt="phone"  class="product-img default">
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase-content">
+                
+                    <h3>
+                      <a href="#" class="showcase-title">Motorola Phones </a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                   
+                    </div>
+                
+                    <div class="price-box" style="padding-left: 120px;">
+                      <p class="price">$250.00 <del>$350.00</del></p>
+                      
+                    </div>
+                
+                  </div>
+                
+                </div>
+      
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <div class="img-container">
+                      <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202207/17/zIfbzzLY6mUmbS47.png" alt="phone"  class="product-img default">
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase-content">
+                    
+                    <h3>
+                      <a href="#" class="showcase-title">Oppo Phones</a>
+                    </h3>
+                
+                    <div class="showcase-rating">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                                         
+                    </div>
+                
+                    <div class="price-box" style="padding-left: 115px;">
+                      <p class="price">$410.00 <del>$490.00</del></p>
+                  
+                    </div>
+                
+                  </div>
+                
+                </div>
+    
+                </div>
+    
+    
+                 <div class="product-grid">
+    
+                  <div class="showcase">
+              
+                    <div class="showcase-banner">
+                      <div class="img-container">
+                        <img src="https://cdn.dxomark.com/wp-content/uploads/medias/post-129588/Huawei-Mate-50-Pro_featured-image-packshot-review.jpg" alt=" phone"  class="product-img default">
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="showcase-content">
+                  
+                      <h3>
+                        <a href="#" class="showcase-title">Huawei Phones</a>
+                      </h3>
+                  
+                      <div class="showcase-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                  
+                      <div class="price-box">
+                        <p class="price">$560.00  <del>$630.00</del></p>
+                    
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+        
+                  <div class="showcase">
+                  
+                    <div class="showcase-banner">
+                      <div class="img-container">
+                        <img src="https://www.androidauthority.com/wp-content/uploads/2021/07/Nokia-G50-smartphone.jpg" alt="phone" class="product-img default">
+                      </div>      
+                  
+            
+                    </div>
+                  
+                    <div class="showcase-content">
+                  
+                      <h3>
+                        <a href="#" class="showcase-title">Nokia Phones</a>
+                      </h3>
+                  
+                      <div class="showcase-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>             
+                          
+                      </div>
+                  
+                      <div class="price-box" style="padding-left: 110px;">
+                        <p class="price">$370.00  <del>$430.00</del></p>
+                    
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+        
+                  <div class="showcase">
+                  
+                    <div class="showcase-banner">
+                      <div class="img-container">
+                        <img src="https://m.media-amazon.com/images/I/51Wl1rt5aIL.jpg" alt=" phone"  class="product-img default">
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="showcase-content">
+                  
+                      <h3>
+                        <a href="#" class="showcase-title">Lg Phones</a>
+                      </h3>
+                  
+                      <div class="showcase-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        
+                      </div>
+                  
+                      <div class="price-box" style="padding-left: 116px;">
+                        <p class="price">$460.00 <del>$530.00</del></p>
+                        
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+        
+                  <div class="showcase">
+                  
+                    <div class="showcase-banner">
+                      <div class="img-container">
+                        <img src="https://www.laptopsdirect.co.uk/Images/5011101563_1_Classic.png?v=5" alt="phone" class="product-img default">
+                      </div>             
+                    
+                    </div>
+                  
+                    <div class="showcase-content">
+                  
+                      <h3>
+                        <a href="#" class="showcase-title">Oneplus Phones</a>
+                      </h3>
+                  
+                      <div class="showcase-rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                  
+                      <div class="price-box">
+                        <p class="price">$390.00 <del>$460.00</del></p>
+                        
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+    
+                 </div>   
+            </div>
+      </div>
+
+
+
+
+      <footer class="footer">
+
+        <div class="footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <div class="img-container">
+                <img src="data:image/png;base64,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" alt="logo">
+                </div>
+                
+              </a>
+    
+              <p class="footer-text">
+                E-shopping is an overall shopping platform that presents a <br> complete wardrobe of uniquely crafted Ethnic  Wear,   Casuals, <br>Edgy
+                Denims, &
+               all kinds of Accessories  that you dream of <br> and inspired from the most trending styles and ideas.
+              </p>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-square-instagram fa-xl"></i>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-square-facebook
+                  fa-xl"></i>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-square-twitter fa-xl"></i>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-pinterest fa-xl"></i>
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Help & Support</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Return Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Shipping & Delivery</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Order Tranking</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">List of Shops</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Dealers & Agents</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">FAQ Information</a>
+              </li>
+             
+            </ul>
+
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Category</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Complete Your Look</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Baby Corner</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Man & Woman Shoe</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Handbags & Wallets</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Women's Clothing</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Plus Sizes</a>
+              </li>            
+    
+            </ul>
+
+            <ul class="footer-list" >
+    
+              <li>
+                <p class="footer-list-title">Information</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Awards Winning</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">World Media Partner</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Become an Agent</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Refund Policy</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">About Company</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Payment Type</a>
+              </li>            
+    
+            </ul> 
+          </div>
+        </div>
+
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2023 <a href="#">Debjyoti Das</a>. All Rights Reserved
+            </p>
+    
+            <ul class="footer-bottom-list">
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Sitemap</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+
+          <div class="payment">
+            <p class="payment-title">We Support</p>
+  
+            <div class="img-container">
+              <img src="card_img.png" alt="Online payment logos" class="payment-img">
+            </div>
+           
+          </div>
+        </div>
+    
+      </footer>
+    </main>
+
+
+ </script>
+</body>
+</html>
